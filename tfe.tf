@@ -3,7 +3,7 @@ terraform {
     organization = "kcorbin"
 
     workspaces {
-      name = "tf-learn"
+      name = "learn-terraform"
     }
   }
 }

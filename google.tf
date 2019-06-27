@@ -37,11 +37,7 @@ variable "image" {
   default     = "debian-cloud/debian-9"
 }
 
-provider "google" {
-  credentials = "${var.gcp_credentials}"
-  project     = "${var.gcp_project}"
-  region      = "${var.gcp_region}"
-}
+
 
 resource "google_compute_instance" "demo" {
   name         = "${var.instance_name}"

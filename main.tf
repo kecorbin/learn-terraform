@@ -10,6 +10,7 @@ resource "aws_instance" "example" {
   tags = {
     owner = "kcorbin"
     FOO   = "bar"
+    FIZZ  = "buzz"
   }
 
   provisioner "local-exec" {
